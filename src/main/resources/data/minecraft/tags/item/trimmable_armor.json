@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "carbontech:carbon_helmet",
+    "carbontech:carbon_chestplate",
+    "carbontech:carbon_leggings",
+    "carbontech:carbon_boots"
+  ]
+}

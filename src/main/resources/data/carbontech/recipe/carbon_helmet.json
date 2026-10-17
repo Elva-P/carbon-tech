@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "carbontech:carbon_ingot"
+    }
+  },
+  "result": {
+    "id": "carbontech:carbon_helmet",
+    "count": 1
+  }
+}

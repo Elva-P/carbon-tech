@@ -1,0 +1,6 @@
+{
+  "parent": "carbontech:item/carbon_bow",
+  "textures": {
+    "layer0": "carbontech:item/carbon_bow_pulling_0"
+  }
+}

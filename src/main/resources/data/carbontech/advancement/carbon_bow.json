@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "carbontech:carbon_bow"
+    },
+    "title": {
+      "translate": "advancements.carbontech.carbon_bow.title"
+    },
+    "description": {
+      "translate": "advancements.carbontech.carbon_bow.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_bow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "carbontech:carbon_bow"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bow"
+    ]
+  ],
+  "parent": "carbontech:carbon_ingot"
+}

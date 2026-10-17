@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "carbontech:carbon_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "addition": {
+    "item": "carbontech:carbon_ingot"
+  },
+  "result": {
+    "id": "carbontech:carbon_boots"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.carbontech.elastic_impact"
+  },
+  "supported_items": "#carbontech:elastic_impact_enchantable",
+  "weight": 2,
+  "max_level": 3,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 45,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {}
+}

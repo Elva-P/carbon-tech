@@ -1,0 +1,87 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_book"
+    },
+    "title": {
+      "translate": "advancements.carbontech.level_seven.title"
+    },
+    "description": {
+      "translate": "advancements.carbontech.level_seven.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sharpness": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "minecraft:sharpness",
+                  "levels": {
+                    "min": 7
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "efficiency": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "minecraft:efficiency",
+                  "levels": {
+                    "min": 7
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "protection": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "minecraft:protection",
+                  "levels": {
+                    "min": 7
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sharpness",
+      "efficiency",
+      "protection"
+    ]
+  ],
+  "parent": "carbontech:full_armor",
+  "rewards": {
+    "experience": 100
+  }
+}

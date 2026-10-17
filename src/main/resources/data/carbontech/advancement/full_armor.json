@@ -1,0 +1,74 @@
+{
+  "display": {
+    "icon": {
+      "id": "carbontech:carbon_chestplate"
+    },
+    "title": {
+      "translate": "advancements.carbontech.full_armor.title"
+    },
+    "description": {
+      "translate": "advancements.carbontech.full_armor.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "carbontech:carbon_helmet"
+          }
+        ]
+      }
+    },
+    "chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "carbontech:carbon_chestplate"
+          }
+        ]
+      }
+    },
+    "leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "carbontech:carbon_leggings"
+          }
+        ]
+      }
+    },
+    "boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "carbontech:carbon_boots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "helmet"
+    ],
+    [
+      "chestplate"
+    ],
+    [
+      "leggings"
+    ],
+    [
+      "boots"
+    ]
+  ],
+  "parent": "carbontech:carbon_ingot"
+}

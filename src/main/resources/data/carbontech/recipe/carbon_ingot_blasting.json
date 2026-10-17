@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": [
+    { "item": "carbontech:raw_carbon" },
+    { "item": "carbontech:carbon_ore" }
+  ],
+  "result": { "id": "carbontech:carbon_ingot" },
+  "experience": 1.5,
+  "cookingtime": 100
+}

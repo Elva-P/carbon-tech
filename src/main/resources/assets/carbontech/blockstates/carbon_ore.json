@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "carbontech:block/carbon_ore" }
+  }
+}

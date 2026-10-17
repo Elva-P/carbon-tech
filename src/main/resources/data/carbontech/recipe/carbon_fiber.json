@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "carbontech:carbon_ingot" }
+  ],
+  "result": {
+    "id": "carbontech:carbon_fiber",
+    "count": 4
+  }
+}

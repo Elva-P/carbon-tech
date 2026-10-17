@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " SF",
+    "S F",
+    " SF"
+  ],
+  "key": {
+    "S": {
+      "item": "carbontech:carbon_stick"
+    },
+    "F": {
+      "item": "carbontech:carbon_fiber"
+    }
+  },
+  "result": {
+    "id": "carbontech:carbon_bow",
+    "count": 1
+  }
+}

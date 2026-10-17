@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "I",
+    "S",
+    "S"
+  ],
+  "key": {
+    "I": {
+      "item": "carbontech:carbon_ingot"
+    },
+    "S": {
+      "item": "carbontech:carbon_stick"
+    }
+  },
+  "result": {
+    "id": "carbontech:carbon_shovel",
+    "count": 1
+  }
+}

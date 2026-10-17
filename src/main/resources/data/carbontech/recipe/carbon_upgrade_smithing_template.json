@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#S#",
+    "#C#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "C": {
+      "item": "minecraft:deepslate"
+    },
+    "S": {
+      "item": "carbontech:carbon_upgrade_smithing_template"
+    }
+  },
+  "result": {
+    "id": "carbontech:carbon_upgrade_smithing_template",
+    "count": 2
+  }
+}

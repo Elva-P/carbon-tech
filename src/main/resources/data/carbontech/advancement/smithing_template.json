@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "carbontech:carbon_upgrade_smithing_template"
+    },
+    "title": {
+      "translate": "advancements.carbontech.smithing_template.title"
+    },
+    "description": {
+      "translate": "advancements.carbontech.smithing_template.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_template": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "carbontech:carbon_upgrade_smithing_template"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_template"
+    ]
+  ],
+  "parent": "carbontech:carbon_ingot"
+}

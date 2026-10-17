@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "carbontech:high_elasticity",
+    "carbontech:absorption",
+    "carbontech:elastic_force",
+    "carbontech:shock_absorption",
+    "carbontech:elastic_impact"
+  ]
+}

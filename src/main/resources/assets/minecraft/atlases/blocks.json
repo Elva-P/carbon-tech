@@ -1,0 +1,8 @@
+{
+  "sources": [
+    {
+      "type": "single",
+      "resource": "carbontech:entity/carbon_shield"
+    }
+  ]
+}

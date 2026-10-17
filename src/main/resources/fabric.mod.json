@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "carbontech",
+	"version": "${version}",
+	"name": "Carbon Tech",
+	"description": "네더라이트 이후의 엔드게임 신소재 장비 모드. 가벼움, 고탄성, 초고속, 충격 흡수.",
+	"authors": [
+		"seojoon"
+	],
+	"contact": {
+		"homepage": "https://github.com/Elva-P/carbon-tech",
+		"sources": "https://github.com/Elva-P/carbon-tech"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/carbontech/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.seojoon.carbontech.CarbonTech"
+		],
+		"client": [
+			"com.seojoon.carbontech.client.CarbonTechClient"
+		],
+		"fabric-datagen": [
+			"com.seojoon.carbontech.client.CarbonTechDataGenerator"
+		]
+	},
+	"mixins": [
+		"carbontech.mixins.json",
+		{
+			"config": "carbontech.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

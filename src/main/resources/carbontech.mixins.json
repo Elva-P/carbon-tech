@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "com.seojoon.carbontech.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AnvilScreenHandlerMixin",
+    "ForgingScreenHandlerAccessor",
+    "LivingEntityMixin",
+    "PlayerEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

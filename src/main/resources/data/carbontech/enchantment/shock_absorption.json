@@ -1,0 +1,30 @@
+{
+  "description": {
+    "translate": "enchantment.carbontech.shock_absorption"
+  },
+  "supported_items": "#carbontech:shock_absorption_enchantable",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:item_damage": [
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": 0.15
+        }
+      }
+    ]
+  }
+}
