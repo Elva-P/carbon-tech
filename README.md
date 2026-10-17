@@ -9,7 +9,7 @@
 
 1. [Fabric Loader](https://fabricmc.net/use/)를 1.21.1용으로 설치합니다.
 2. [Fabric API](https://modrinth.com/mod/fabric-api) 1.21.1 버전을 `mods` 폴더에 넣습니다.
-3. `carbontech-1.0.0.jar`를 `mods` 폴더에 넣습니다.
+3. `carbontech-1.0.1.jar`를 `mods` 폴더에 넣습니다.
 
 ## 테크트리
 
@@ -56,7 +56,7 @@
 ## 개발
 
 ```bash
-./gradlew build        # build/libs/carbontech-1.0.0.jar
+./gradlew build        # build/libs/carbontech-1.0.1.jar
 ./gradlew runClient    # 개발용 클라이언트 실행
 python3 tools/make_textures.py   # 임시 텍스처 재생성
 ```
