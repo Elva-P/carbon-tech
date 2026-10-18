@@ -7,9 +7,20 @@
 
 ## 설치
 
-1. [Fabric Loader](https://fabricmc.net/use/)를 1.21.1용으로 설치합니다.
-2. [Fabric API](https://modrinth.com/mod/fabric-api) 1.21.1 버전을 `mods` 폴더에 넣습니다.
-3. `carbontech-1.0.2.jar`를 `mods` 폴더에 넣습니다.
+| 필요한 것 | 다운로드 |
+|---|---|
+| Fabric Loader (1.21.1) | https://fabricmc.net/use/installer/ |
+| Fabric API (1.21.1) | https://modrinth.com/mod/fabric-api/versions?g=1.21.1 |
+| Carbon Tech | https://github.com/Elva-P/carbon-tech/releases/latest |
+
+1. Fabric 설치 프로그램을 실행해 게임 버전 **1.21.1**을 선택하고 Install을 누릅니다.
+2. 런처에서 `fabric-loader-1.21.1` 프로필을 한 번 실행해 타이틀 화면까지 띄운 뒤 종료합니다. (mods 폴더가 생깁니다)
+3. `fabric-api-*.jar`와 `carbontech-*.jar`를 `mods` 폴더에 넣습니다.
+   - 윈도우: `%appdata%\.minecraft\mods`
+   - 맥: `~/Library/Application Support/minecraft/mods`
+4. 같은 프로필로 실행하면 타이틀 화면의 Mods 버튼에 Carbon Tech가 보입니다.
+
+한 번에 설치하려면 릴리스 페이지의 `.mrpack` 파일을 [Modrinth 앱](https://modrinth.app)으로 열면 로더, Fabric API, 모드가 자동 설치됩니다.
 
 ## 테크트리
 
