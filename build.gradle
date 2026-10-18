@@ -14,6 +14,19 @@ repositories {
 loom {
 	splitEnvironmentSourceSets()
 
+	runs {
+		// 전용 서버는 클라이언트(run/)와 다른 폴더를 쓴다
+		server {
+			runDir "run/server"
+		}
+		// 멀티 테스트용: 켜지자마자 로컬 서버에 자동 접속하는 클라이언트
+		clientJoin {
+			inherit client
+			name "Minecraft Client (join localhost)"
+			programArgs "--quickPlayMultiplayer", "localhost:25565", "--username", "CarbonTester"
+		}
+	}
+
 	mods {
 		"carbontech" {
 			sourceSet sourceSets.main
