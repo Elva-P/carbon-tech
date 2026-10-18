@@ -22,15 +22,25 @@ public final class ModBlocks {
 
 	// ── 기획서 2-1: 카본 원광석 ───────────────────────────────────
 	/**
-	 * 심층암 다이아몬드 광석보다 조금 단단하다 (강도 5.0 vs 4.5).
-	 * 캘 때 경험치 3~7 드롭. requiresTool()이 있어야 아래 needs_diamond_tool 태그가 작동한다.
+	 * 돌 층의 카본 원광석. 다이아몬드 광석(3.0)보다 조금 단단한 3.5.
+	 * 캘 때 경험치 3~7 드롭. requiresTool()이 있어야 needs_diamond_tool 태그가 작동한다.
 	 */
 	public static final Block CARBON_ORE = registerWithItem("carbon_ore",
 			new ExperienceDroppingBlock(
 					UniformIntProvider.create(3, 7),
 					AbstractBlock.Settings.create()
-							.strength(5.0f, 3.0f)          // (채굴 시간, 폭발 저항)
+							.strength(3.5f, 3.0f)          // (채굴 시간, 폭발 저항)
 							.requiresTool()                // 맞는 도구 아니면 드롭 없음
+							.sounds(BlockSoundGroup.STONE)
+			));
+
+	/** 심층암 층의 카본 원광석. 심층암 다이아몬드 광석(4.5)보다 조금 단단한 5.0. 드롭은 같다. */
+	public static final Block DEEPSLATE_CARBON_ORE = registerWithItem("deepslate_carbon_ore",
+			new ExperienceDroppingBlock(
+					UniformIntProvider.create(3, 7),
+					AbstractBlock.Settings.create()
+							.strength(5.0f, 3.0f)
+							.requiresTool()
 							.sounds(BlockSoundGroup.DEEPSLATE)
 			));
 

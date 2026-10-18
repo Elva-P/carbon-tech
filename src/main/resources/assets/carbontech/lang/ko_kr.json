@@ -39,5 +39,6 @@
   "advancements.carbontech.full_armor.title": "검은 갑주",
   "advancements.carbontech.full_armor.description": "카본 방어구 네 부위를 모두 갖추세요",
   "advancements.carbontech.level_seven.title": "한계 돌파",
-  "advancements.carbontech.level_seven.description": "카본 장비의 날카로움, 효율 또는 보호를 VII까지 올리세요"
+  "advancements.carbontech.level_seven.description": "카본 장비의 날카로움, 효율 또는 보호를 VII까지 올리세요",
+  "block.carbontech.deepslate_carbon_ore": "심층암 카본 원광석"
 }

@@ -35,12 +35,23 @@
           }
         ]
       }
+    },
+    "has_deepslate_carbon_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "carbontech:deepslate_carbon_ore"
+          }
+        ]
+      }
     }
   },
   "requirements": [
     [
       "has_raw_carbon",
-      "has_carbon_ore"
+      "has_carbon_ore",
+      "has_deepslate_carbon_ore"
     ]
   ]
 }

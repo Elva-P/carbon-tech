@@ -9,13 +9,13 @@
 
 1. [Fabric Loader](https://fabricmc.net/use/)를 1.21.1용으로 설치합니다.
 2. [Fabric API](https://modrinth.com/mod/fabric-api) 1.21.1 버전을 `mods` 폴더에 넣습니다.
-3. `carbontech-1.0.1.jar`를 `mods` 폴더에 넣습니다.
+3. `carbontech-1.0.2.jar`를 `mods` 폴더에 넣습니다.
 
 ## 테크트리
 
 | 단계 | 내용 |
 |---|---|
-| 카본 원광석 | Y -63 ~ -56 심층암 지대에 생성. **다이아몬드 이상 곡괭이** 필요 (그 이하로 캐면 드롭 없음). 채굴 시 카본 원석 드롭 |
+| 카본 원광석 | 다이아몬드와 같은 분포(Y -64에서 가장 많고 16까지 감소)이되 약간 더 희귀. 돌 층은 카본 원광석, 심층암 층은 심층암 카본 원광석. **다이아몬드 이상 곡괭이** 필요 (그 이하로 캐면 드롭 없음). 채굴 시 카본 원석 드롭 |
 | 카본 주괴 | 카본 원석을 **고열 용광로**에서 제련 (일반 화로 불가) |
 | 탄소 섬유 | 주괴 1개 → 섬유 4개 |
 | 탄소 막대 | 섬유 2개 세로 배열. 모든 카본 도구의 손잡이 |
@@ -56,7 +56,7 @@
 ## 개발
 
 ```bash
-./gradlew build        # build/libs/carbontech-1.0.1.jar
+./gradlew build        # build/libs/carbontech-1.0.2.jar
 ./gradlew runClient    # 개발용 클라이언트 실행
 python3 tools/make_textures.py   # 임시 텍스처 재생성
 ```

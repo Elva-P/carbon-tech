@@ -39,5 +39,6 @@
   "advancements.carbontech.full_armor.title": "Black Plate",
   "advancements.carbontech.full_armor.description": "Obtain all four pieces of carbon armor",
   "advancements.carbontech.level_seven.title": "Beyond the Limit",
-  "advancements.carbontech.level_seven.description": "Raise Sharpness, Efficiency or Protection to VII on carbon gear"
+  "advancements.carbontech.level_seven.description": "Raise Sharpness, Efficiency or Protection to VII on carbon gear",
+  "block.carbontech.deepslate_carbon_ore": "Deepslate Carbon Ore"
 }

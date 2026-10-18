@@ -34,6 +34,7 @@ public final class ModItemGroups {
 				// 탭에 들어갈 아이템 목록 (표시 순서대로)
 				.entries((displayContext, entries) -> {
 					entries.add(ModBlocks.CARBON_ORE);
+					entries.add(ModBlocks.DEEPSLATE_CARBON_ORE);
 					entries.add(ModItems.RAW_CARBON);
 					entries.add(ModItems.CARBON_INGOT);
 					entries.add(ModItems.CARBON_FIBER);

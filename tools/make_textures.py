@@ -33,6 +33,11 @@ PALETTE = {
     "S": (0x26, 0x28, 0x2d, 255),
     "T": (0x50, 0x54, 0x5b, 255),
     "U": (0x08, 0x08, 0x0a, 255),
+    # 돌 바탕색 (바닐라 stone 톤)
+    "p": (0x7e, 0x7e, 0x7e, 255),
+    "q": (0x8a, 0x8a, 0x8a, 255),
+    "r": (0x70, 0x70, 0x70, 255),
+    "o": (0x96, 0x96, 0x96, 255),
     # 심층암 바탕색 (바닐라 deepslate 톤)
     "a": (0x50, 0x50, 0x52, 255),
     "b": (0x4a, 0x4a, 0x4c, 255),
@@ -60,24 +65,6 @@ BLOCK_TEXTURES = {
         "KGkkKkkGkkKkkGkK",
         "KkkkkkkkkkkkkkkK",
         "KKKKKKKKKKKKKKKK",
-    ],
-    "carbon_ore": [
-        "abababcbabababab",
-        "babcbabababdbaba",
-        "abOOabababcbOOab",
-        "bOLHOabdbabOHLOb",
-        "aOHLOababcbOLHOa",
-        "babOOabababOOaba",
-        "cbabababdbababab",
-        "abababcbabababab",
-        "babdbaOOabcbabab",
-        "ababaOLHOabababa",
-        "cbabaOHLOabdbaba",
-        "ababdbOOabababab",
-        "babababababOOaba",
-        "abcbabdbabOLHOab",
-        "babababababOOaba",
-        "abababcbabababab",
     ],
 }
 
@@ -467,6 +454,44 @@ def apply_block_weave(rows, fills=("k", "G")):
     """아이콘의 면(살짝 검정 k, 진한 회색 G)을 블록 직조 패턴으로 치환. 외곽선(K)과 광택선(g)은 유지."""
     return ["".join(block_weave(x, y) if ch in fills else ch for x, ch in enumerate(row))
             for y, row in enumerate(rows)]
+
+
+def _noise(x, y, seed=0):
+    """결정적 의사난수 0~1 (같은 좌표는 항상 같은 값)"""
+    h = (x * 374761393 + y * 668265263 + seed * 982451653) & 0xFFFFFFFF
+    h = (h ^ (h >> 13)) * 1274126177 & 0xFFFFFFFF
+    return ((h ^ (h >> 16)) & 0xFFFF) / 65535.0
+
+
+# 다이아몬드 원광석과 같은 자리에 박히는 결정 (4x4 마름모, 외곽 검정 / 몸체 살짝 검정 / 좌상단 광택)
+GEM = [
+    ".KK.",
+    "KgkK",
+    "KkGK",
+    ".KK.",
+]
+GEM_POSITIONS = [(1, 1), (10, 1), (5, 6), (12, 8), (1, 11), (8, 12)]
+
+
+def ore_rows(bg_palette, seed):
+    """16x16 광석 텍스처: 바탕을 노이즈로 채우고 결정을 얹는다.
+    bg_palette: (주색, 밝은색, 어두운색, 아주 밝은색) 문자 4개"""
+    main, light, dark, bright = bg_palette
+    g = _blank(16, 16)
+    for y in range(16):
+        for x in range(16):
+            n = _noise(x, y, seed)
+            g[y][x] = dark if n < 0.22 else (light if n < 0.40 else (bright if n < 0.46 else main))
+    for gx, gy in GEM_POSITIONS:
+        for dy, row in enumerate(GEM):
+            for dx, ch in enumerate(row):
+                if ch != ".":
+                    g[gy + dy][gx + dx] = ch
+    return ["".join(r) for r in g]
+
+
+BLOCK_TEXTURES["carbon_ore"] = ore_rows(("p", "q", "r", "o"), seed=1)           # 돌 바탕
+BLOCK_TEXTURES["deepslate_carbon_ore"] = ore_rows(("a", "c", "d", "b"), seed=2)  # 심층암 바탕
 
 
 def darken(rows):

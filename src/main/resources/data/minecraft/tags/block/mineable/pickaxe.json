@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "carbontech:carbon_ore",
-    "carbontech:carbon_block"
+    "carbontech:carbon_block",
+    "carbontech:deepslate_carbon_ore"
   ]
 }
